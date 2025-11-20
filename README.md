@@ -1,35 +1,54 @@
-# AI_Programming_Project  
-AI Data Analyzer – Using Python, Pandas, NumPy, and Matplotlib
+ AI Data Analyzer
 
-## Author
-**Name:** Benedict Sau  
-**Registration Number: 250594DAI
-
----
-
-## 📌 Project Overview
-This project is an **AI Data Analyzer** built using Python.  
-Its purpose is to load a dataset (CSV or JSON), clean it, analyze it, and create visualizations.  
-It demonstrates basic data analysis skills using common data science libraries.
-
-The project:
-- Loads a dataset using Pandas  
-- Cleans missing or duplicate data  
-- Generates descriptive statistics  
-- Creates at least one visualization (Histogram/Scatter/Bar Plot)  
-- Saves results inside the `outputs/` folder  
-
-This project is fully developed using **VS Code** on Windows
+Author
+Name: Benedict Sau  
+Registration Number: 250594DAI
 
 ---
 
-## 📚 Recommended Python Libraries Used
-These libraries are used to complete the project successfully:
+## Project Overview
 
-| Library | Purpose |
-|--------|---------|
-| **Pandas** | Load, clean, manipulate datasets |
-| **NumPy** | Numeric operations and array transformations |
-| **Matplotlib** | Data visualization (histograms, line charts, bar charts) |
-| **Seaborn** *(optional)* | More advanced statistical plots |
-| **Jupyter Notebook** *(optional)* | If you want to add documented analysis |
+The **AI Data Analyzer** is a Python-based project designed to:
+
+- Load datasets in CSV or JSON format  
+- Clean and preprocess data (handle missing values, remove duplicates)  
+- Perform descriptive statistics and summarize both numeric and categorical data  
+- Generate visualizations (histograms, boxplots, correlation heatmaps, scatter plots) to understand data patterns and relationships  
+
+This project is implemented in **Google Colab** or **VS Code**, making it easy to run without complex environment setup.
+
+---
+ Libraries 
+
+The project uses the following Python libraries:
+
+| Library       | Purpose |
+|---------------|---------|
+| pandas        | Load, clean, and manipulate structured data |
+| numpy         | Numerical computations and array operations |
+| matplotlib    | Basic data visualization (histograms, scatter plots) |
+| seaborn       | Advanced statistical visualizations (heatmaps, boxplots) |
+
+
+ Data Being Analyzed
+
+The project analyzes a dataset similar to the Titanic passenger dataset. The dataset contains demographic, travel, and ticket information for each passenger.  
+
+Columns in the dataset:
+
+| Column       | Type       | Description |
+|--------------|------------|-------------|
+| PassengerId  | Numeric    | Unique identifier for each passenger |
+| Survived     | Numeric    | Survival status (0 = did not survive, 1 = survived) |
+| Pclass       | Numeric    | Passenger class (1 = first, 2 = second, 3 = third) |
+| Name         | Categorical | Full name of the passenger |
+| Sex          | Categorical | Gender of the passenger (male/female) |
+| Age          | Numeric    | Age of the passenger in years |
+| SibSp        | Numeric    | Number of siblings/spouses aboard |
+| Parch        | Numeric    | Number of parents/children aboard |
+| Fare         | Numeric    | Ticket fare paid by the passenger |
+| Embarked     | Categorical | Port of embarkation (C, Q, S) |
+
+The analysis helps to identify patterns such as survival trends, demographic distribution, fare variation, and correlations between family members aboard.
+
+
