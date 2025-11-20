@@ -1,0 +1,88 @@
+Ah! Got it — you want a **written report** explaining **the data analyzed**, not the code. I’ll prepare a professional, clear report you can submit or attach with your project.
+
+---
+
+# **AI Data Analyzer Project – Data Analysis Report**
+
+**Author:** Benedict Sau
+**Registration Number:** [Insert Registration Number]
+**Date:** [Insert Date]
+
+---
+
+## **1. Introduction**
+
+The AI Data Analyzer project involves analyzing a dataset similar to the Titanic dataset. The goal is to explore, clean, and visualize the data to understand patterns, relationships, and key statistics. The analysis helps identify trends in survival rates, demographics, and other passenger characteristics.
+
+---
+
+## **2. Dataset Description**
+
+The dataset analyzed consists of **10 columns** describing passengers aboard a ship. It contains both numeric and categorical data. Below is a detailed description of each column:
+
+| Column      | Type        | Description                                                          |
+| ----------- | ----------- | -------------------------------------------------------------------- |
+| PassengerId | Numeric     | Unique identifier for each passenger                                 |
+| Survived    | Numeric     | Survival status (0 = did not survive, 1 = survived)                  |
+| Pclass      | Numeric     | Passenger class (1 = first, 2 = second, 3 = third)                   |
+| Name        | Categorical | Full name of the passenger                                           |
+| Sex         | Categorical | Gender of the passenger (male/female)                                |
+| Age         | Numeric     | Age of the passenger in years                                        |
+| SibSp       | Numeric     | Number of siblings/spouses aboard                                    |
+| Parch       | Numeric     | Number of parents/children aboard                                    |
+| Fare        | Numeric     | Ticket fare paid by the passenger                                    |
+| Embarked    | Categorical | Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton) |
+
+---
+
+## **3. Data Cleaning and Preparation**
+
+Before analysis, the dataset was cleaned to ensure accuracy:
+
+* **Duplicates removed:** Any repeated entries were deleted.
+* **Missing values handled:**
+
+  * Numeric columns like Age and Fare had missing values filled with the median.
+  * Categorical columns like Embarked had missing values filled with the mode.
+* The cleaned dataset is ready for descriptive analysis and visualization.
+
+---
+
+## **4. Analysis Performed**
+
+The following analyses were carried out on the dataset:
+
+1. **Descriptive Statistics:**
+
+   * Numeric columns (Age, Fare, SibSp, Parch) were summarized with mean, median, standard deviation, min, max, and quartiles.
+   * Categorical columns (Sex, Embarked, Pclass, Survived) were summarized to show frequency counts and percentages.
+
+2. **Visual Analysis:**
+
+   * **Histograms** were used to display distributions of numeric variables such as Age and Fare.
+   * **Boxplots** highlighted the spread and outliers in numeric data.
+   * **Correlation Heatmap** showed relationships between numeric variables to identify strong correlations.
+   * **Scatter plots** were used to visualize relationships between the most correlated numeric pairs.
+
+---
+
+## **5. Key Findings**
+
+* The **age distribution** is roughly normal with some outliers, showing a mix of children, adults, and elderly passengers.
+* Most passengers traveled in the **third class**, with fewer in first and second class.
+* **Fare** shows high variability, with some passengers paying very high amounts for first-class tickets.
+* The **Survived** column indicates that a larger proportion of passengers did not survive.
+* Strong correlations were observed between certain numeric features such as SibSp and Parch, indicating family travel patterns.
+
+---
+
+## **6. Conclusion**
+
+The dataset provides insights into passenger demographics, survival rates, and ticket information. By cleaning and visualizing the data, it is possible to identify patterns such as:
+
+* Survival trends by class, age, and gender
+* Relationships between fare, class, and survival
+* Family-related travel patterns (SibSp and Parch correlations)
+
+
+
